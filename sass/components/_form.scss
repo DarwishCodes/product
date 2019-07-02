@@ -1,0 +1,38 @@
+.form {
+    display: flex;
+    justify-content: center;
+
+
+    &__group {
+        position: relative;
+        width: 39%;
+
+    }
+
+    &__input {
+        font-family: inherit;
+        border: none;
+        padding: 1rem 2rem;
+        border: 1px solid rgba($color-black-2, 0.5);
+        width: 100%;
+
+
+        &:focus {
+            outline: none;
+            border: 1px solid rgba($color-blue-1, 0.5);
+        }
+
+        &:focus:invalid {
+            border: 1px solid rgba($color-red-1, 0.5); 
+        }
+    }
+
+    &__label {
+        position: absolute;
+        font-family: inherit;
+        font-size: 1.6rem;
+        top: -3rem;
+        left: 0;
+
+    }
+}

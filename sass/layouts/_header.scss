@@ -1,0 +1,96 @@
+.navigation {
+    background-color: rgba($color-black-1, 0.9);
+    padding: 1.7rem 0rem;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+}
+
+
+.header {
+
+
+    &__logo {
+        width: auto;
+        height: 2.5rem;
+        margin-left: 1rem;
+    }
+
+    &__navigation {
+        float: right;
+        font-size: 1.6rem;
+        font-weight: 600;
+        @include clearfix;
+
+
+        & li {
+            display: inline-block;
+            list-style: none;
+
+
+            & a:link,
+            & a:visited {
+                display: inline-block;
+                text-decoration: none;
+                margin: 0.5rem 1rem;
+                color: $color-white;
+                transition: all 0.3s;
+            }
+
+
+            & a:hover {
+                color: $color-red-1;
+            }
+        }
+    }
+
+    &__heading-box {
+        padding-top: 10rem;
+        text-align: center;
+        font-size: 2.5rem;
+        word-spacing: 1.5rem;
+        font-weight: 900;
+
+        @include addMediaQuery(phone-m) {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__heading {
+        position: relative;
+
+
+        &--1 {
+            font-weight: 300;
+            animation-name: fadeToTopText;
+            animation-duration: 0.6s;
+            animation-timing-function: ease;
+        }
+
+        &--2 {
+            margin-left: 5rem;
+            animation-name: fadeToTopText;
+            animation-duration: 0.6s;
+            animation-delay: 0.4s;
+            animation-timing-function: ease;
+            animation-fill-mode: backwards;
+        }
+    }
+
+    &__hereo-img-box {
+        display: block;
+        width: 100%;
+    }
+
+    &__hero-img {
+        display: block;
+        margin: 0 auto;
+        width: 85%;
+        animation-delay: 0.5s;
+        animation-name: fadeToTop;
+        animation-duration: 0.6s;
+        animation-timing-function: ease;
+        animation-fill-mode: backwards;
+    }
+}
+

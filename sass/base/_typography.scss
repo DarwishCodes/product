@@ -1,0 +1,34 @@
+.heading-secondry {
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+    display: inline-block;
+    text-align: center;
+
+    @include addMediaQuery(tablet) {
+        font-size: 3.8rem;
+    }
+
+    @include addMediaQuery(phone-m) {
+        font-size: 2rem;
+    }
+}
+
+.heading-tertiary {
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.paragraph {
+    font-weight: 300;
+    font-size: 2.3rem;
+    word-spacing: 0.1rem;
+    text-align: center;
+    padding: 0 20rem;
+
+    @include addMediaQuery(tablet) {
+        padding: 0 3rem;
+    }
+}

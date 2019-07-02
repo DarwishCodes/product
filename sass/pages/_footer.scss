@@ -1,0 +1,53 @@
+.footer {
+    padding: 10rem 0;
+    border-top: 1px solid rgba($color-grey-1, 0.2);
+
+    &__navigation {
+        font-size: 1.8rem;
+        margin-left: 1.6rem;
+    }
+
+    &__list {
+        list-style: none;
+
+    }
+
+    &__item {
+        
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+
+    }
+
+    &__link {
+        text-decoration: none;
+        color: rgba($color-grey-1, 0.9);
+        font-weight: 600;
+
+        &:hover {
+            color: rgba($color-black-2, 0.8);
+        }
+
+
+    }
+
+    &__copyright {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: rgba($color-grey-1, 0.9);
+
+    }
+
+    &__credit {
+        color: rgba($color-grey-1, 1);
+        text-decoration: none;
+
+        &:hover {
+            color: rgba($color-black-2, 0.8);
+        }
+
+
+    }
+
+}

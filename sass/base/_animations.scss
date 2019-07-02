@@ -1,0 +1,139 @@
+@keyframes fadeToRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeToLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeToTop {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+
+[data-aos="fadeToTopPhone"] {
+    opacity: 0;
+    transition-property: transform, opacity;
+  
+    &.aos-animate {
+      opacity: 1;
+    }
+  }
+
+@keyframes fadeToTopText {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomLoop {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes colorGradientChangeBackground {
+
+    0% {
+        background-size: 100%;
+    }
+    
+    50% {
+        background-size: 500%;
+    }
+
+    100% {
+        background-size: 100%;
+    }
+}
+
+@keyframes animateImage1 {
+
+    0% {
+        left: 29%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 4%;
+        opacity: 1;
+    }
+}
+
+
+@keyframes animateImage2 {
+
+    0% {
+        transform: rotate(90deg) scale(2);
+        opacity: 0;
+    }
+
+    50% {
+        transform: rotate(90deg) scale(1);
+        opacity: 1;
+    }
+
+    70% {
+        transform: rotate(90deg) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(0) scale(1);
+    }
+
+}
+
+
+@keyframes animateImage3 {
+
+    0% {
+        left: 29%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 51.5%;
+        opacity: 1;
+    }
+
+}

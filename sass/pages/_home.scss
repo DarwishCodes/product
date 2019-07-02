@@ -1,0 +1,36 @@
+.section-overview {
+    padding: 0rem 0 25rem 0;
+    margin-top: 35rem;
+}
+
+.section-camera {
+    padding: 5rem 0 25rem 0;
+
+    @include addMediaQuery(tablet) {
+        padding: 2rem 0 25rem 0;
+    }
+}
+
+.section-screen {
+    padding: 5rem 0 25rem 0;
+
+    @include addMediaQuery(tablet) {
+        padding: 2rem 0 25rem 0;
+    }
+}
+
+.section-os {
+    padding: 5rem 0 10rem 0;
+
+    @include addMediaQuery(tablet) {
+        padding: 2rem 0 10rem 0;
+    }
+}
+
+.section-sub {
+    padding: 5rem 0 10rem 0;
+
+    @include addMediaQuery(tablet) {
+        padding: 2rem 0 10rem 0;
+    }
+}
